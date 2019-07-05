@@ -5,8 +5,8 @@
 
 "use strict";
 
-const EC_GROUP_ORDER = Buffer.from('fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141', 'hex');
-const ZERO32 = Buffer.alloc(32, 0);
+var EC_GROUP_ORDER = Buffer.from('fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141', 'hex');
+var ZERO32 = Buffer.alloc(32, 0);
 
 var promise = typeof Promise === "undefined" ?
               require("es6-promise").Promise :
