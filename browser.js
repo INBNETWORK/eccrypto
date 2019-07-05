@@ -142,7 +142,7 @@ var getPublicCompressed = exports.getPublicCompressed = function(privateKey) { /
   assert(privateKey.length === 32, "Bad private key");
   assert(isValidPrivateKey(privateKey), "Bad private key");
   // See https://github.com/wanderer/secp256k1-node/issues/46
-  let compressed = true;
+  var compressed = true;
   return Buffer.from(ec.keyFromPrivate(privateKey).getPublic(compressed, "arr"));
 };
 
